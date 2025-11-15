@@ -1,0 +1,135 @@
+/* Load custom font */
+@font-face {
+  font-family: 'OldNewspaperTypes';
+  src: url('OldNewspaperTypes.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'OldNewspaperTypes', serif;
+  background-color: #ab2330;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #ffd700;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 4px solid #000000;
+}
+.logo {
+  max-width: 140px;
+  margin-bottom: 0.5rem;
+}
+.nav a {
+  color: #ffffff;
+  margin: 0 0.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Sections */
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: 2px solid #000000;
+}
+
+/* Life at school */
+.life-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.life-container img {
+  max-width: 48%;
+  border: 4px solid #000000;
+}
+
+/* Message block */
+.message-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.message-block img {
+  max-width: 200px;
+  border: 4px solid #000000;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+input, textarea, button {
+  padding: 0.6rem;
+  font-family: 'OldNewspaperTypes', serif;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  background: #ffffff;
+  color: #000000;
+}
+button {
+  background-color: #ffd700;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 4px solid #000000;
+}
+.footer img {
+  max-width: 100px;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
+.footer-links a {
+  color: #ffffff;
+  margin: 0 0.4rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .life-container img,
+  .message-block img {
+    max-width: 100%;
+  }
+  .life-container,
+  .message-block {
+    flex-direction: column;
+    text-align: center;
+  }
+}
